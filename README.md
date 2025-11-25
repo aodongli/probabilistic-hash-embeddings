@@ -1,3 +1,6 @@
+# Probabilistic Hash Embeddings for Online Learning of Categorical Features
+
+
 Official codebase for AAAI 2026 Oral paper: Probabilistic Hash Embeddings for Online Learning of Categorical Features
 
 ---
