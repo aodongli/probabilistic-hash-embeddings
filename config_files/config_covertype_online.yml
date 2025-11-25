@@ -1,0 +1,21 @@
+device: cuda
+model: covertype_cls
+trainer: online_dytab_trainer
+latent_dim: 20
+num_hash: 3
+num_bucket: 7
+num_weight: 11
+num_discrete: 2
+num_continuous: 10
+loss: nelbo_ce
+optim: adam
+learning_rate: 0.01
+l2: 0.
+ini_task_epoch: 20
+epoch: 15
+batch_size: 128
+num_data_worker: 4
+num_class: 7
+num_task: 500
+exp_path: 
+  results/covertype_online/

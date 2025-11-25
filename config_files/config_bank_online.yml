@@ -1,0 +1,20 @@
+device: cuda
+model: adult_cls
+trainer: online_dytab_trainer
+latent_dim: 20
+num_hash: 3
+num_bucket: 7
+num_weight: 11
+num_discrete: 9
+num_continuous: 7
+loss: nelbo_bce
+optim: adam
+learning_rate: 0.01
+l2: 0.
+ini_task_epoch: 20
+epoch: 15
+batch_size: 128
+num_data_worker: 4
+num_task: 317
+exp_path: 
+  results/bank_online/

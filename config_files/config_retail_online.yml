@@ -1,0 +1,21 @@
+device: cuda
+model: retail_pred
+trainer: online_time_dytab_trainer
+latent_dim: 20
+num_hash: 3
+num_bucket: 109
+num_weight: 109
+num_discrete: 3
+num_continuous: 1
+loss: nelbo_time
+optim: adam
+learning_rate: 0.005
+l2: 0.
+ini_task_epoch: 15
+epoch: 5
+batch_size: 128
+num_data_worker: 4
+sample_seq_len: 10
+num_task: 312
+exp_path: 
+  results/retail_online/

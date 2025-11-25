@@ -1,0 +1,22 @@
+device: cuda
+model: movielens_ncf_mlp2_auginput
+nn_dim: 50
+trainer: movielens_recommend_trainer
+num_discrete: 2
+num_genre: 20
+latent_dim: 50
+num_hash: 3
+num_bucket: 10009
+num_weight: 10009
+loss: nelbo_regression
+optim: adam
+epoch: 5
+learning_rate: 0.005
+ll_scale: 0.3
+l2: 0.
+ini_task_epoch: 15
+batch_size: 1024
+num_data_worker: 4
+num_task: 8688
+exp_path: 
+  results/movielens/
